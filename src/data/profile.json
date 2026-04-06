@@ -1,0 +1,98 @@
+{
+  "name": "Andrew Arbo",
+  "email": "andrew@fahrschulautopilot.de",
+  "location": "Fürth, Germany (CET)",
+  "languages": ["German (Native)", "English (Fluent)", "Turkish (Conversational)"],
+  "contractor_status": "B2B Contractor — immediate onboarding, no visa/payroll required",
+  "linkedin": "https://linkedin.com/in/andrewarbo",
+  "github": "https://github.com/asol1213",
+  "website": "https://fahrschulautopilot.de",
+  "calendly": "https://calendly.com/andrewarbohq/30min",
+
+  "headline": "AI Automation Engineer & Ex-Deloitte Consultant",
+
+  "summary": "Former Risk & Process Advisory Consultant at Deloitte turned AI/Automation builder. I bridge the gap between deep technical engineering and business strategy. I build production SaaS platforms (Next.js, Supabase, n8n), automate entire business workflows with AI, and have a proven track record in data architecture, GRC compliance, and enterprise consulting.",
+
+  "experience": [
+    {
+      "title": "Founder & Full-Stack AI Engineer",
+      "company": "Fahrschule Autopilot (Own SaaS)",
+      "period": "2026 – Present",
+      "type": "own_project",
+      "bullets": [
+        "Built a complete SaaS platform from scratch: 37 pages, 72 API routes, 32 DB tables, 114 unit tests",
+        "Tech: Next.js 16, React 19, TypeScript, Supabase (PostgreSQL), Tailwind CSS, Vercel",
+        "AI integration: Claude-powered multilingual chatbot (5 languages) and AI theory tutor with spaced repetition",
+        "17 automated n8n workflows: WhatsApp reminders, payment dunning, onboarding flows, Google review automation",
+        "Self-hosted infrastructure on Raspberry Pi 5: n8n, PostgreSQL, Redis, WhatsApp bridge, Uptime Kuma, WireGuard VPN",
+        "Stripe payment integration, digital contract e-signatures, DATEV/lexoffice accounting export",
+        "Multi-tenant architecture with Row Level Security, HMAC webhook signatures, DSGVO compliance"
+      ]
+    },
+    {
+      "title": "Freelance Data Migration Architect",
+      "company": "Self-Employed",
+      "period": "2024 – 2025",
+      "type": "work",
+      "bullets": [
+        "Architected end-to-end data governance frameworks for SaaS migrations with zero-downtime cutovers",
+        "Conducted IT Risk Assessments for data automation solutions, improving operational efficiency by 25%",
+        "Executed technical needs analyses aligning client infrastructure with regulatory requirements"
+      ]
+    },
+    {
+      "title": "Senior Consultant – Technical Implementation & Systems Architecture",
+      "company": "Deloitte",
+      "period": "2022 – 2024",
+      "type": "work",
+      "bullets": [
+        "Translated complex technical security concepts and SOC2 compliance for non-technical executives, increasing stakeholder buy-in by 40%",
+        "Led translation of regulatory requirements (SOC2, ISO 27001) into automated technical specifications",
+        "Managed high-stakes international cross-functional data streams (EMEA/APAC) for risk mitigation"
+      ]
+    },
+    {
+      "title": "Consultant – Process & Data Automation",
+      "company": "Deloitte",
+      "period": "2020 – 2022",
+      "type": "work",
+      "bullets": [
+        "Optimized client workflows with internal control frameworks, reducing data processing errors by 30%",
+        "Executed automated QA testing for financial and IT deliverables (ISO standards)",
+        "Developed GRC playbooks and automated system-handover docs, reducing onboarding time by 40%"
+      ]
+    },
+    {
+      "title": "Business Systems Analyst",
+      "company": "Siemens & Freelance",
+      "period": "2018 – 2020",
+      "type": "work",
+      "bullets": [
+        "Built advanced Power BI dashboards for real-time IT KPI tracking with complex DAX queries",
+        "Optimized ETL reporting tools (VBA, SQL), reducing system downtime by 15%",
+        "Automated manual data validation, saving 20+ hours/week through script-based automation"
+      ]
+    }
+  ],
+
+  "skills": {
+    "ai_automation": ["Claude API", "n8n workflows", "AI chatbots", "Spaced repetition systems", "Workflow automation", "WhatsApp automation"],
+    "fullstack": ["Next.js", "React", "TypeScript", "Node.js", "Tailwind CSS", "Vercel", "REST APIs"],
+    "backend_infra": ["Supabase/PostgreSQL", "Redis", "Docker", "Raspberry Pi", "WireGuard VPN", "Nginx", "Linux"],
+    "data": ["Power BI (DAX)", "SQL", "Python (Pandas)", "ETL pipelines", "Azure Data Factory", "Data migration"],
+    "erp_crm": ["SAP S/4HANA (BP, MM, SD, FI/CO)", "Salesforce", "HubSpot", "Stripe"],
+    "compliance": ["ISO 27001", "SOC2", "TISAX", "GDPR/DSGVO", "GRC frameworks", "SOX"],
+    "tools": ["Git/GitHub", "Jira", "Confluence", "Resend", "Cloudflare"]
+  },
+
+  "education": {
+    "degree": "B.Sc. Industrial Engineering",
+    "focus": "Data Analytics & Process Optimization"
+  },
+
+  "cover_letter_style": {
+    "tone": "Confident, direct, slightly bold. Not corporate-boring. Lead with a hook that shows domain knowledge. Use bullet points for key selling points. End with logistics (location, contractor status). Keep it under 1 page.",
+    "example_hook": "Most Customer Success applicants have to learn what 'Third-Party Risk Management' is after they get hired. I have lived it.",
+    "structure": "1) Bold opening hook, 2) Why I'm applying + Deloitte credibility, 3) 3 bullet points matching their requirements, 4) Logistics paragraph, 5) Short closing"
+  }
+}

@@ -1,0 +1,48 @@
+{
+  "dubai": {
+    "coverLetter": "Dear [Hiring Team],\n\nMost candidates applying for this role will tell you about their technical skills. I'd rather show you what I've built.\n\nAs a former Senior Consultant at Deloitte and founder of a production SaaS platform (37 pages, 72 APIs, 17 automated workflows, AI chatbot), I bring both enterprise consulting rigor and hands-on engineering capability.\n\nHere's why I'm the right fit:\n\n- [Bullet 1: Match their top requirement with your experience]\n- [Bullet 2: Show domain knowledge for their industry]\n- [Bullet 3: Quantified achievement from Deloitte or Fahrschule Autopilot]\n\nLogistics: I'm based in Germany (CET/GST overlap) and ready to relocate to Dubai immediately. Available as a full-time employee or B2B contractor — whichever works best for your team.\n\nI'd love to discuss how I can contribute. Let's connect.\n\nBest regards,\nAndrew Arbo",
+    "emailBody": "Hi [Name],\n\nI came across the [Role] position at [Company] and wanted to reach out directly.\n\nI'm a former Deloitte Senior Consultant who recently built a complete SaaS platform from scratch (Next.js, Supabase, AI integration, 17 automated workflows). I'm looking to bring this combination of consulting experience and engineering skills to Dubai.\n\nI've attached my CV and cover letter. Would you be open to a 15-minute call this week?\n\nBest,\nAndrew",
+    "emailSubject": "Application: [Role] — Andrew Arbo | Ex-Deloitte, Full-Stack Engineer"
+  },
+  "remote": {
+    "coverLetter": "Dear [Hiring Team],\n\n[Hook: Show you understand their product/problem deeply]\n\nI'm a former Deloitte Senior Consultant turned AI/automation engineer. Most recently, I built Fahrschule Autopilot — a production SaaS platform with 72 API routes, a Claude-powered multilingual chatbot, and 17 automated n8n workflows — as a solo founder.\n\nWhat I bring to [Company]:\n\n- [Bullet 1: Their core technical requirement + your proof]\n- [Bullet 2: Relevant experience from Deloitte or SaaS project]\n- [Bullet 3: Something unique about your approach/mindset]\n\nLogistics: Based in Germany (CET), fully set up for remote work as a B2B contractor. Immediate availability, no visa requirements.\n\nI'd welcome the chance to discuss this further.\n\nBest regards,\nAndrew Arbo",
+    "emailBody": "Hi [Name],\n\nI saw the [Role] opening and it's a strong match with my background.\n\nQuick context: I'm ex-Deloitte (Senior Consultant, process & data automation) and recently built a production SaaS platform solo — 72 APIs, AI chatbot, 17 automated workflows.\n\nMy CV and cover letter are attached. Happy to jump on a call anytime.\n\nBest,\nAndrew",
+    "emailSubject": "Application: [Role] — Andrew Arbo | Ex-Deloitte, SaaS Builder"
+  },
+  "freelance": {
+    "coverLetter": "Hi [Name],\n\nI saw that [Company/Problem] and I think I can help.\n\nI specialize in business automation — specifically building systems that replace manual work with automated workflows. My most recent project: I built a complete SaaS platform for driving schools that automates appointment reminders, payment dunning, Google review collection, and customer onboarding via WhatsApp — all running 24/7 without human intervention.\n\nWhat I can do for you:\n\n- [Specific solution for their problem]\n- [Timeline: e.g., 'Delivered in 2 weeks']\n- [Tech: n8n, Supabase, Next.js, WhatsApp API, AI chatbot]\n\nFixed price: [€X,XXX]. No hourly billing, no surprises.\n\nWant to see a demo? Book a 15-min call: https://calendly.com/andrewarbohq/30min\n\nAndrew Arbo",
+    "emailBody": "Hi [Name],\n\nI help businesses automate their manual processes — appointment reminders, payment follow-ups, customer onboarding, WhatsApp communication.\n\nI recently built a complete automation platform for driving schools (17 automated workflows, AI chatbot, WhatsApp integration). I think a similar approach could save [Company] significant time.\n\nWould you be open to a quick 15-minute call to discuss?\n\nhttps://calendly.com/andrewarbohq/30min\n\nBest,\nAndrew",
+    "emailSubject": "[Company]: Automation Proposal — Andrew Arbo"
+  },
+  "kunden": {
+    "coverLetter": "Hallo [Name],\n\nIch habe mir [Firma/Website] angeschaut und gesehen, dass Sie [Problem: z.B. Termine noch manuell verwalten / keine Online-Bewertungen sammeln / etc.].\n\nIch habe eine Lösung gebaut, die genau das automatisiert:\n\n- Automatische Termin-Erinnerungen per WhatsApp (24h + 2h vorher)\n- Google-Bewertungen automatisch nach jedem Termin einsammeln\n- Online-Anmeldung für Neukunden\n- KI-Chatbot der 24/7 Fragen beantwortet (auch auf Türkisch, Arabisch, Russisch)\n\nDas System läuft bereits bei Fahrschulen und spart im Schnitt 15+ Stunden pro Woche.\n\nPreis: Ab €99/Monat, keine Einrichtungsgebühr, monatlich kündbar.\n\nSoll ich Ihnen eine kurze Demo zeigen? Dauert nur 15 Minuten.\n\nhttps://calendly.com/andrewarbohq/30min\n\nMit freundlichen Grüßen,\nAndrew Arbo",
+    "emailBody": "Hallo [Name],\n\nkurze Frage: Nutzen Sie bereits eine Software für automatische Termin-Erinnerungen und Google-Bewertungen?\n\nIch habe ein System gebaut, das Fahrschulen im Schnitt 15 Stunden pro Woche spart — komplett automatisiert, ab €99/Monat.\n\nDarf ich Ihnen eine 15-minütige Demo zeigen?\n\nhttps://calendly.com/andrewarbohq/30min\n\nBeste Grüße,\nAndrew Arbo",
+    "emailSubject": "[Firma]: Termine & Bewertungen automatisieren — Fahrschule Autopilot"
+  },
+  "cvData": {
+    "default": {
+      "1": "[Job Title | Key Skill Areas]",
+      "2": "[2-3 sentence summary tailored to the role. Mention Deloitte, SaaS project, and most relevant skills.]",
+      "3": "Founder & Full-Stack AI Engineer — Fahrschule Autopilot",
+      "4": "Built a production SaaS platform: 37 pages, 72 API routes, 32 DB tables, AI chatbot (5 languages), 17 automated workflows",
+      "5": "Tech: Next.js 16, React 19, TypeScript, Supabase (PostgreSQL), n8n, Claude API, Stripe, WhatsApp API",
+      "6": "Self-hosted infrastructure: Raspberry Pi 5, Docker, Redis, WireGuard VPN, Nginx, automated backups",
+      "7": "Senior Consultant — Deloitte (Technical Implementation & Systems Architecture)",
+      "8": "[Bullet matching their requirements — e.g., SOC2/compliance, stakeholder management, data architecture]",
+      "9": "[Bullet matching their requirements — e.g., cross-functional teams, regulatory translation, migration scripts]",
+      "10": "[Bullet matching their requirements — e.g., EMEA/APAC data streams, risk mitigation, contract compliance]",
+      "11": "Consultant — Deloitte (Process & Data Automation)",
+      "12": "Optimized client workflows with internal control frameworks, reducing data processing errors by 30%",
+      "13": "Executed automated QA testing for financial and IT deliverables (ISO standards)",
+      "14": "Developed GRC playbooks and automated system-handover docs, reducing onboarding time by 40%",
+      "15": "Business Systems Analyst — Siemens & Freelance",
+      "16": "Built Power BI dashboards for real-time IT KPI tracking with advanced DAX queries",
+      "17": "Optimized ETL reporting tools (VBA, SQL), reducing system downtime by 15%",
+      "18": "Automated manual data validation, saving 20+ hours/week through script-based automation",
+      "19": "[Skills row 1 — Compliance/Governance or Tech skills matching the role]",
+      "20": "[Skills row 2 — Data/Automation or Full-Stack skills matching the role]",
+      "21": "[Skills row 3 — ERP/CRM or Infrastructure skills matching the role]",
+      "22": "[Skills row 4 — Tools matching the role]"
+    }
+  }
+}
