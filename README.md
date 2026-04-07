@@ -2,6 +2,8 @@
 
 Personal CRM and job application tracker with gamification. Built for managing multiple pipelines (Dubai jobs, remote jobs, freelance, clients) from a single Kanban dashboard.
 
+**[Live Demo](https://autoapply-snowy.vercel.app)**
+
 ## Features
 
 - **4 Pipelines**: Dubai Jobs, Remote Jobs, Freelance, Kunden — each with separate tracking
