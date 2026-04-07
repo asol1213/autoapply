@@ -2,7 +2,11 @@ import { NextRequest, NextResponse } from "next/server";
 import { Resend } from "resend";
 import { getApplication, saveApplication } from "@/lib/store";
 
-const resend = new Resend(process.env.RESEND_API_KEY);
+function getResend() {
+  const key = process.env.RESEND_API_KEY;
+  if (!key) throw new Error("RESEND_API_KEY is not configured");
+  return new Resend(key);
+}
 
 export async function POST(req: NextRequest) {
   try {
@@ -15,7 +19,7 @@ export async function POST(req: NextRequest) {
     if (!app.emailSubject?.trim()) return NextResponse.json({ error: "No email subject" }, { status: 400 });
     if (!app.emailBody?.trim()) return NextResponse.json({ error: "No email body" }, { status: 400 });
 
-    const { error } = await resend.emails.send({
+    const { error } = await getResend().emails.send({
       from: process.env.EMAIL_FROM || "andrew@fahrschulautopilot.de",
       to: app.contact.email,
       subject: app.emailSubject,
