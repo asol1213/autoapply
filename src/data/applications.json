@@ -1,1 +1,409 @@
-[]
+[
+  {
+    "id": "377d1000-ab39-491e-8edb-d5cbac5b3772",
+    "pipeline": "dubai",
+    "stage": "lead",
+    "company": "Careem",
+    "role": "Senior Data Engineer",
+    "url": "",
+    "language": "en",
+    "jobDescription": "",
+    "coverLetter": "",
+    "cvData": "",
+    "emailSubject": "",
+    "emailBody": "",
+    "contact": {
+      "name": "Sarah Ahmed",
+      "role": "VP Engineering",
+      "email": "sarah@careem.com",
+      "linkedin": "https://linkedin.com/in/sarah",
+      "phone": "+971551234567"
+    },
+    "notes": "",
+    "nextAction": "CV nachschicken",
+    "nextActionDate": "2026-04-10T00:00:00Z",
+    "skills": [
+      "Python",
+      "SQL",
+      "ETL"
+    ],
+    "salary": "AED 35k/mo",
+    "tags": [
+      "Hot",
+      "Recruiter"
+    ],
+    "activities": [
+      {
+        "date": "2026-04-06T17:15:00.877Z",
+        "type": "note",
+        "text": "Erstellt in Pipeline \"dubai\""
+      }
+    ],
+    "createdAt": "2026-04-06T17:15:00.877Z",
+    "updatedAt": "2026-04-06T17:15:00.878Z",
+    "appliedAt": null,
+    "followUpAt": null,
+    "followUpDone": false
+  },
+  {
+    "id": "e18cd7c8-68ee-4da8-97cf-f7b486cac34e",
+    "pipeline": "dubai",
+    "stage": "lead",
+    "company": "Noon",
+    "role": "Automation Lead",
+    "url": "",
+    "language": "en",
+    "jobDescription": "",
+    "coverLetter": "",
+    "cvData": "",
+    "emailSubject": "",
+    "emailBody": "",
+    "contact": {
+      "name": "",
+      "role": "",
+      "email": "",
+      "linkedin": "",
+      "phone": ""
+    },
+    "notes": "",
+    "nextAction": "",
+    "nextActionDate": null,
+    "skills": [
+      "n8n",
+      "Python"
+    ],
+    "salary": "AED 28k/mo",
+    "tags": [
+      "Direct"
+    ],
+    "activities": [
+      {
+        "date": "2026-04-06T17:15:00.890Z",
+        "type": "note",
+        "text": "Erstellt in Pipeline \"dubai\""
+      }
+    ],
+    "createdAt": "2026-04-06T17:15:00.890Z",
+    "updatedAt": "2026-04-06T17:15:00.890Z",
+    "appliedAt": null,
+    "followUpAt": null,
+    "followUpDone": false
+  },
+  {
+    "id": "15c6980b-ac37-4cf6-9ef6-a02ccfc7a91e",
+    "pipeline": "remote",
+    "stage": "interview",
+    "company": "GitLab",
+    "role": "Backend Engineer",
+    "url": "",
+    "language": "en",
+    "jobDescription": "",
+    "coverLetter": "Dear GitLab...",
+    "cvData": "",
+    "emailSubject": "",
+    "emailBody": "",
+    "contact": {
+      "name": "",
+      "role": "",
+      "email": "",
+      "linkedin": "",
+      "phone": ""
+    },
+    "notes": "",
+    "nextAction": "",
+    "nextActionDate": null,
+    "skills": [
+      "TypeScript",
+      "PostgreSQL"
+    ],
+    "salary": "$130k",
+    "tags": [
+      "Remote-first"
+    ],
+    "activities": [
+      {
+        "date": "2026-04-06T17:15:00.901Z",
+        "type": "note",
+        "text": "Erstellt in Pipeline \"remote\""
+      },
+      {
+        "date": "2026-04-06T17:18:09.358Z",
+        "type": "status_change",
+        "text": "Status: applied → interview"
+      }
+    ],
+    "createdAt": "2026-04-06T17:15:00.901Z",
+    "updatedAt": "2026-04-06T17:18:09.358Z",
+    "appliedAt": "2026-04-06T17:15:00.901Z",
+    "followUpAt": null,
+    "followUpDone": false
+  },
+  {
+    "id": "0b0ce2c6-2fb3-4851-85bb-f57b41bbb804",
+    "pipeline": "remote",
+    "stage": "applied",
+    "company": "Datadog",
+    "role": "Solutions Engineer",
+    "url": "",
+    "language": "en",
+    "jobDescription": "",
+    "coverLetter": "",
+    "cvData": "",
+    "emailSubject": "",
+    "emailBody": "",
+    "contact": {
+      "name": "Lisa Weber",
+      "role": "Recruiter",
+      "email": "lisa@datadog.com",
+      "linkedin": "",
+      "phone": ""
+    },
+    "notes": "",
+    "nextAction": "Technical Interview vorbereiten",
+    "nextActionDate": "2026-04-08T00:00:00Z",
+    "skills": [
+      "Monitoring",
+      "Python"
+    ],
+    "salary": "€95k",
+    "tags": [
+      "Hot"
+    ],
+    "activities": [
+      {
+        "date": "2026-04-06T17:15:00.911Z",
+        "type": "note",
+        "text": "Erstellt in Pipeline \"remote\""
+      },
+      {
+        "date": "2026-04-06T17:18:10.902Z",
+        "type": "status_change",
+        "text": "Status: interview → applied"
+      }
+    ],
+    "createdAt": "2026-04-06T17:15:00.911Z",
+    "updatedAt": "2026-04-06T17:18:10.902Z",
+    "appliedAt": "2026-04-06T17:18:10.902Z",
+    "followUpAt": "2026-04-11T17:18:10.902Z",
+    "followUpDone": false
+  },
+  {
+    "id": "79c15734-56be-4ee6-9767-97fce92c7634",
+    "pipeline": "remote",
+    "stage": "lead",
+    "company": "Zapier",
+    "role": "Automation Engineer",
+    "url": "",
+    "language": "en",
+    "jobDescription": "",
+    "coverLetter": "",
+    "cvData": "",
+    "emailSubject": "",
+    "emailBody": "",
+    "contact": {
+      "name": "",
+      "role": "",
+      "email": "",
+      "linkedin": "",
+      "phone": ""
+    },
+    "notes": "",
+    "nextAction": "",
+    "nextActionDate": null,
+    "skills": [
+      "n8n",
+      "APIs"
+    ],
+    "salary": "$115k",
+    "tags": [
+      "Langschuss"
+    ],
+    "activities": [
+      {
+        "date": "2026-04-06T17:15:00.921Z",
+        "type": "note",
+        "text": "Erstellt in Pipeline \"remote\""
+      }
+    ],
+    "createdAt": "2026-04-06T17:15:00.921Z",
+    "updatedAt": "2026-04-06T17:15:00.921Z",
+    "appliedAt": null,
+    "followUpAt": null,
+    "followUpDone": false
+  },
+  {
+    "id": "3ef2339c-1ebc-4305-afe1-27d2e0e59abb",
+    "pipeline": "freelance",
+    "stage": "lead",
+    "company": "Handwerker Schmidt",
+    "role": "WhatsApp + CRM Automation",
+    "url": "",
+    "language": "en",
+    "jobDescription": "",
+    "coverLetter": "",
+    "cvData": "",
+    "emailSubject": "",
+    "emailBody": "",
+    "contact": {
+      "name": "",
+      "role": "",
+      "email": "",
+      "linkedin": "",
+      "phone": ""
+    },
+    "notes": "",
+    "nextAction": "Demo zeigen",
+    "nextActionDate": null,
+    "skills": [
+      "n8n",
+      "WhatsApp",
+      "Supabase"
+    ],
+    "salary": "€3.000",
+    "tags": [
+      "Warm Lead"
+    ],
+    "activities": [
+      {
+        "date": "2026-04-06T17:15:00.930Z",
+        "type": "note",
+        "text": "Erstellt in Pipeline \"freelance\""
+      }
+    ],
+    "createdAt": "2026-04-06T17:15:00.930Z",
+    "updatedAt": "2026-04-06T17:15:00.930Z",
+    "appliedAt": null,
+    "followUpAt": null,
+    "followUpDone": false
+  },
+  {
+    "id": "23185d9b-336c-408a-a82a-08b844a9ce5e",
+    "pipeline": "freelance",
+    "stage": "lead",
+    "company": "Zahnarzt Dr. Meier",
+    "role": "Termin-Automation",
+    "url": "",
+    "language": "en",
+    "jobDescription": "",
+    "coverLetter": "",
+    "cvData": "",
+    "emailSubject": "",
+    "emailBody": "",
+    "contact": {
+      "name": "",
+      "role": "",
+      "email": "",
+      "linkedin": "",
+      "phone": ""
+    },
+    "notes": "",
+    "nextAction": "",
+    "nextActionDate": null,
+    "skills": [
+      "n8n",
+      "WhatsApp"
+    ],
+    "salary": "€2.500",
+    "tags": [
+      "Cold"
+    ],
+    "activities": [
+      {
+        "date": "2026-04-06T17:15:00.940Z",
+        "type": "note",
+        "text": "Erstellt in Pipeline \"freelance\""
+      }
+    ],
+    "createdAt": "2026-04-06T17:15:00.940Z",
+    "updatedAt": "2026-04-06T17:15:00.940Z",
+    "appliedAt": null,
+    "followUpAt": null,
+    "followUpDone": false
+  },
+  {
+    "id": "1d7dff0e-1a18-4c39-a614-d060026ed4d2",
+    "pipeline": "kunden",
+    "stage": "lead",
+    "company": "Fahrschule Nürnberg",
+    "role": "Autopilot SaaS",
+    "url": "",
+    "language": "en",
+    "jobDescription": "",
+    "coverLetter": "",
+    "cvData": "",
+    "emailSubject": "",
+    "emailBody": "",
+    "contact": {
+      "name": "",
+      "role": "",
+      "email": "",
+      "linkedin": "",
+      "phone": ""
+    },
+    "notes": "",
+    "nextAction": "",
+    "nextActionDate": null,
+    "skills": [
+      "SaaS"
+    ],
+    "salary": "€249/mo",
+    "tags": [
+      "Prospect"
+    ],
+    "activities": [
+      {
+        "date": "2026-04-06T17:15:00.949Z",
+        "type": "note",
+        "text": "Erstellt in Pipeline \"kunden\""
+      }
+    ],
+    "createdAt": "2026-04-06T17:15:00.949Z",
+    "updatedAt": "2026-04-06T17:15:00.949Z",
+    "appliedAt": null,
+    "followUpAt": null,
+    "followUpDone": false
+  },
+  {
+    "id": "6d88a76f-f35c-4fe6-98f6-f65bcf69ef08",
+    "pipeline": "kunden",
+    "stage": "interview",
+    "company": "Fahrschule Berlin",
+    "role": "Autopilot SaaS",
+    "url": "",
+    "language": "en",
+    "jobDescription": "",
+    "coverLetter": "",
+    "cvData": "",
+    "emailSubject": "",
+    "emailBody": "",
+    "contact": {
+      "name": "",
+      "role": "",
+      "email": "",
+      "linkedin": "",
+      "phone": ""
+    },
+    "notes": "",
+    "nextAction": "",
+    "nextActionDate": null,
+    "skills": [
+      "SaaS"
+    ],
+    "salary": "€349/mo",
+    "tags": [
+      "Demo gebucht"
+    ],
+    "activities": [
+      {
+        "date": "2026-04-06T17:15:00.959Z",
+        "type": "note",
+        "text": "Erstellt in Pipeline \"kunden\""
+      }
+    ],
+    "createdAt": "2026-04-06T17:15:00.959Z",
+    "updatedAt": "2026-04-06T17:15:00.959Z",
+    "appliedAt": null,
+    "followUpAt": null,
+    "followUpDone": false
+  }
+]
