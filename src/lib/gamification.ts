@@ -89,7 +89,11 @@ function readState(): GameState {
 }
 
 function writeState(state: GameState) {
-  fs.writeFileSync(DB_PATH, JSON.stringify(state, null, 2));
+  try {
+    fs.writeFileSync(DB_PATH, JSON.stringify(state, null, 2));
+  } catch {
+    // Vercel serverless: writes don't persist, but that's OK for demo
+  }
 }
 
 function getDefaultState(): GameState {

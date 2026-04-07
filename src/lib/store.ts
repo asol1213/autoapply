@@ -60,7 +60,11 @@ function readDB(): Application[] {
 }
 
 function writeDB(apps: Application[]) {
-  fs.writeFileSync(DB_PATH, JSON.stringify(apps, null, 2));
+  try {
+    fs.writeFileSync(DB_PATH, JSON.stringify(apps, null, 2));
+  } catch {
+    // Vercel serverless: writes don't persist, but that's OK for demo
+  }
 }
 
 export function getApplications(): Application[] {
