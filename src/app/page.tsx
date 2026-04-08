@@ -3,6 +3,7 @@
 import { useEffect, useState, useCallback } from "react";
 import Link from "next/link";
 import { useTheme } from "./theme-provider";
+import { SkeletonDashboard } from "../components/Skeleton";
 
 type Pipeline = "all" | "dubai" | "remote" | "freelance" | "kunden";
 type Stage = "lead" | "applied" | "interview" | "offer" | "won" | "lost";
@@ -228,10 +229,16 @@ export default function Dashboard() {
 
         {/* XP Popup */}
         {xpPopup && (
-          <div className="fixed top-4 right-4 z-50 animate-bounce">
-            <div className="bg-amber-500 text-black px-4 py-2 rounded-xl font-bold text-lg shadow-lg shadow-amber-500/30">
+          <div className="fixed top-6 right-6 z-50 xp-popup-animate">
+            <div className="px-6 py-4 rounded-2xl font-bold text-2xl shadow-2xl shadow-amber-500/40 text-white"
+              style={{ background: "linear-gradient(135deg, #f59e0b, #ef4444, #a855f7)" }}>
               +{xpPopup.xp} XP!
-              {xpPopup.achievements.map((a, i) => <span key={i} className="block text-sm font-normal">{a}</span>)}
+              {game && (
+                <span className="block text-sm font-semibold mt-1 opacity-90">
+                  {game.levelInfo.title} Level {game.levelInfo.level}
+                </span>
+              )}
+              {xpPopup.achievements.map((a, i) => <span key={i} className="block text-sm font-normal mt-0.5">{a}</span>)}
             </div>
           </div>
         )}
@@ -366,7 +373,7 @@ export default function Dashboard() {
         )}
 
         {loading ? (
-          <div className="text-center py-20 text-[var(--muted)]">Laden...</div>
+          <SkeletonDashboard />
         ) : apps.length === 0 ? (
           <div className="text-center py-20">
             <p className="text-[var(--muted)] text-lg mb-4">Noch keine Einträge</p>
@@ -428,29 +435,58 @@ export default function Dashboard() {
               })}
             </div>
 
-            {/* Pipeline Conversion Stats */}
-            {pipeline !== "all" && filtered.length > 2 && (
-              <div className="bg-[var(--card)] border border-[var(--border)] rounded-lg p-3 mb-4">
-                <p className="text-xs text-[var(--muted)] mb-2">Pipeline: {PIPELINES.find((p) => p.key === pipeline)?.emoji} {PIPELINES.find((p) => p.key === pipeline)?.label}</p>
-                <div className="flex items-center gap-1 text-xs">
-                  {ACTIVE_STAGES.map((s, i) => {
-                    const count = filtered.filter((a) => a.stage === s.key).length;
-                    const total = filtered.length;
-                    const pct = Math.round((count / total) * 100);
-                    return (
-                      <div key={s.key} className="flex items-center gap-1">
-                        {i > 0 && <span className="text-[var(--muted)]">→</span>}
-                        <div className="flex items-center gap-1 px-2 py-1 rounded" style={{ background: `${s.color}20` }}>
-                          <span style={{ color: s.color }}>{count}</span>
-                          <span className="text-[var(--muted)]">({pct}%)</span>
+            {/* Conversion Funnel Chart */}
+            {pipeline !== "all" && filtered.length > 2 && (() => {
+              const funnelStages: { key: Stage; label: string; color: string }[] = [
+                { key: "lead", label: "Lead", color: "#71717a" },
+                { key: "applied", label: "Applied", color: "#3b82f6" },
+                { key: "interview", label: "Interview", color: "#a855f7" },
+                { key: "offer", label: "Offer", color: "#f59e0b" },
+                { key: "won", label: "Won", color: "#22c55e" },
+              ];
+              const counts = funnelStages.map((s) => ({
+                ...s,
+                count: filtered.filter((a) => a.stage === s.key).length,
+              }));
+              const maxCount = Math.max(...counts.map((c) => c.count), 1);
+              return (
+                <div className="bg-[var(--card)] border border-[var(--border)] rounded-lg p-3 mb-4">
+                  <p className="text-xs text-[var(--muted)] mb-3">
+                    Conversion Funnel: {PIPELINES.find((p) => p.key === pipeline)?.emoji} {PIPELINES.find((p) => p.key === pipeline)?.label}
+                  </p>
+                  {/* Horizontal bar chart */}
+                  <div className="flex items-center gap-0 mb-3 h-8 rounded-lg overflow-hidden" style={{ background: "var(--border)" }}>
+                    {counts.map((s) => {
+                      const widthPct = maxCount > 0 ? Math.max((s.count / maxCount) * 100, s.count > 0 ? 8 : 0) : 0;
+                      return (
+                        <div key={s.key} className="h-full flex items-center justify-center text-xs font-bold transition-all duration-500"
+                          style={{ width: `${widthPct}%`, background: s.color, color: "#fff", minWidth: s.count > 0 ? 32 : 0 }}
+                          title={`${s.label}: ${s.count}`}>
+                          {s.count > 0 && s.count}
                         </div>
-                      </div>
-                    );
-                  })}
-                  <span className="text-[var(--muted)] ml-2">| Won: {filtered.filter((a) => a.stage === "won").length} | Lost: {filtered.filter((a) => a.stage === "lost").length}</span>
+                      );
+                    })}
+                  </div>
+                  {/* Stage labels with conversion percentages */}
+                  <div className="flex items-center gap-0.5 text-xs flex-wrap">
+                    {counts.map((s, i) => {
+                      const prevCount = i > 0 ? counts[i - 1].count : 0;
+                      const convPct = i > 0 && prevCount > 0 ? Math.round((s.count / prevCount) * 100) : null;
+                      return (
+                        <div key={s.key} className="flex items-center gap-0.5">
+                          {i > 0 && (
+                            <span className="text-[var(--muted)] mx-1 font-mono text-[10px]">
+                              {convPct !== null ? `${convPct}%` : ""} →
+                            </span>
+                          )}
+                          <span className="font-semibold" style={{ color: s.color }}>{s.label} {s.count}</span>
+                        </div>
+                      );
+                    })}
+                  </div>
                 </div>
-              </div>
-            )}
+              );
+            })()}
 
             {/* Closed */}
             {closedApps.length > 0 && (
