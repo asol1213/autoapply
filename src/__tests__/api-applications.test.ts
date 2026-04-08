@@ -46,7 +46,8 @@ function mockDB(apps: Application[]) {
 }
 
 function makeRequest(url: string, options?: RequestInit): NextRequest {
-  return new NextRequest(new URL(url, "http://localhost:3000"), options);
+  // eslint-disable-next-line @typescript-eslint/no-explicit-any
+  return new NextRequest(new URL(url, "http://localhost:3000"), options as any);
 }
 
 describe("API /api/applications", () => {
